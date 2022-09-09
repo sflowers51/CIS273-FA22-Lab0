@@ -1,24 +1,34 @@
 ﻿using System;
 namespace Uno
 {
-	public class Player
-	{
-		public Player()
-		{
-			Name = "";
-		}
+    public class Player
+    {
+        public string Name { get; set; }
+        public List<Card> Hand { get; set; }
 
-		public bool HasPlayableCArd(Card card){
-			return fales;
-		}
 
-		public Card GetFirstPlayableCard(Card card){
-			return new Card();
-		}
+        public Player()
+        {
+            Name = "";
+            Hand = new List<Card>();
+        }
 
-		public Color MostCommonColor(){
-			return Color.Blue;
-		}
-	}
+        public bool HasPlayableCard(Card card)
+        {
+            return false;
+        }
+
+        public Card GetFirstPlayableCard(Card card)
+        {
+            return new Card();
+        }
+
+        public Color MostCommonColor()
+        {
+            return Color.Blue;
+        }
+
+
+    }
 }
 
