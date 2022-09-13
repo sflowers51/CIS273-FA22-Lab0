@@ -13,8 +13,9 @@ namespace Uno
 
 	public enum Color
 	{
-        Red, Yellow, Blue, Green, Wild
-    }
+		Red, Yellow, Blue, Green, Wild
+	}
+
 
 	public class Card 
 	{
@@ -22,9 +23,6 @@ namespace Uno
 		public Color Color { get; set; }
 		public int? Number { get; set; }	
 
-		public Card()
-		{
-		}
 
 		public Card(CardType type, Color color, int? number=null)
 		{
